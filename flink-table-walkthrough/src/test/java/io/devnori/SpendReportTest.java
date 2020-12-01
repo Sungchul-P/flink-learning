@@ -9,6 +9,8 @@ import org.junit.Test;
 
 import java.time.LocalDateTime;
 
+import static io.devnori.SpendReport.report;
+
 public class SpendReportTest {
 
     private static final LocalDateTime DATE_TIME = LocalDateTime.of(2020, 1, 1, 0, 0);

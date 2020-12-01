@@ -30,7 +30,7 @@ RUN wget -P /opt/flink/lib/ https://repo.maven.apache.org/maven2/org/apache/flin
     wget -P /opt/flink/lib/ https://repo.maven.apache.org/maven2/org/apache/flink/flink-csv/1.11.2/flink-csv-1.11.2.jar; \
     wget -P /opt/flink/lib/ https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/8.0.19/mysql-connector-java-8.0.19.jar;
 
-COPY --from=builder /opt/target/spend-report-*.jar /opt/flink/usrlib/spend-report.jar
+COPY --from=builder /opt/target/flink-table-walkthrough-*.jar /opt/flink/usrlib/spend-report.jar
 
 RUN echo "execution.checkpointing.interval: 10s" >> /opt/flink/conf/flink-conf.yaml; \
     echo "pipeline.object-reuse: true" >> /opt/flink/conf/flink-conf.yaml; \

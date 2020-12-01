@@ -10,7 +10,6 @@
 
     <modules>
         <module>flink-frauddetection</module>
-        <module>flink-table-walkthrough</module>
     </modules>
 
     <properties>

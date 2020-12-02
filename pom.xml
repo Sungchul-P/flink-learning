@@ -4,12 +4,15 @@
 
     <groupId>io.devnori.flink</groupId>
     <artifactId>flink-learning</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <packaging>pom</packaging>
 
     <modules>
         <module>flink-frauddetection</module>
+        <module>flink-table-walkthrough</module>
+        <module>kafka-data-generator</module>
+        <module>flink-clickcount</module>
     </modules>
 
     <properties>

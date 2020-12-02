@@ -3,6 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>io.devnori.flink</groupId>
+        <artifactId>flink-learning</artifactId>
+        <version>1.0</version>
+    </parent>
+
     <groupId>io.devnori</groupId>
     <artifactId>flink-table-walkthrough</artifactId>
     <version>1.0</version>

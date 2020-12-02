@@ -13,7 +13,8 @@ mvn archetype:generate -DgroupId=io.devnori  -DartifactId=flink-frauddetection
 ### 현재 추가된 Module 목록
 - flink-frauddetection : Flink 공식문서의 DataStream API 예제(Key + State + Time)
 - flink-table-walkthrough : Table API를 이용하여 지출 보고서를 발행하는 예제(Kafka + MySQL)
-- kafka-data-generator : Transaction 데이터를 지속적으로 생성하는 예제(table-walkthrough 연계) 
+- kafka-data-generator : Transaction 데이터를 지속적으로 생성하는 예제(table-walkthrough 연계)
+- flink-clickcount : 클릭 이벤트 데이터를 지속적으로 생성하고, 체크포인트로 복구 및 스케일링 시도할 수 있는 예제
 
 ## Reference
 

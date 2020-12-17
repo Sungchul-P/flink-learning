@@ -70,6 +70,25 @@ public class TaxiRide implements Comparable<TaxiRide>, Serializable {
         this.driverId = g.driverId();
     }
 
+    /**
+     * Creates a TaxiRide with the given parameters.
+     */
+    public TaxiRide(long rideId, boolean isStart, Instant startTime, Instant endTime,
+                    float startLon, float startLat, float endLon, float endLat,
+                    short passengerCnt, long taxiId, long driverId) {
+        this.rideId = rideId;
+        this.isStart = isStart;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.startLon = startLon;
+        this.startLat = startLat;
+        this.endLon = endLon;
+        this.endLat = endLat;
+        this.passengerCnt = passengerCnt;
+        this.taxiId = taxiId;
+        this.driverId = driverId;
+    }
+
     public long rideId;
     public boolean isStart;
     public Instant startTime;

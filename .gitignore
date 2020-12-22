@@ -20,3 +20,5 @@ debug.properties
 .classpath
 .factorypath
 .vscode/
+
+checkpoint-dir/

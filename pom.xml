@@ -14,6 +14,7 @@
         <module>kafka-data-generator</module>
         <module>flink-clickcount</module>
         <module>flink-training</module>
+        <module>flink-statefun-examples</module>
     </modules>
 
     <properties>
@@ -39,33 +40,5 @@
             </snapshots>
         </repository>
     </repositories>
-
-    <dependencies>
-        <!-- This dependency is provided, because it should not be packaged into the JAR file. -->
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
-            <version>${flink.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-clients_${scala.binary.version}</artifactId>
-            <version>${flink.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- Add connector dependencies here. They must be in the default scope (compile). -->
-
-        <!-- Example:
-
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-kafka-0.10_${scala.binary.version}</artifactId>
-            <version>${flink.version}</version>
-        </dependency>
-        -->
-    </dependencies>
-
 
 </project>
